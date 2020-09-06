@@ -1,6 +1,6 @@
 {
   "name": "anyEachOrMap",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "支持具有 Iterator 接口的数据结构或 Object 的 each 或 map",
   "main": "./lib/index.js",
   "files": [
