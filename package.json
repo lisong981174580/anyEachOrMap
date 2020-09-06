@@ -1,8 +1,18 @@
 {
-  "name": "anyeachormap",
+  "name": "anyEachOrMap",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "支持具有 Iterator 接口的数据结构或 Object 的 each 或 map",
+  "main": "./lib/index.js",
+  "files": [
+    "lib"
+  ],
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "keywords": [
+    "map",
+    "forEach"
+  ],
   "scripts": {
     "build": "rm -rf lib && npx babel src -d lib -x \".ts, .tsx\"",
     "prepublish": "npm run build"
@@ -16,5 +26,18 @@
   "bugs": {
     "url": "https://github.com/lisong981174580/anyEachOrMap/issues"
   },
-  "homepage": "https://github.com/lisong981174580/anyEachOrMap#readme"
+  "homepage": "https://github.com/lisong981174580/anyEachOrMap#readme",
+  "dependencies": {
+    "@babel/polyfill": "^7.11.5",
+    "any-utils": "^1.9.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.10.5",
+    "@babel/plugin-proposal-class-properties": "^7.10.4",
+    "@babel/plugin-proposal-object-rest-spread": "^7.11.0",
+    "@babel/preset-env": "^7.10.4",
+    "@babel/preset-typescript": "^7.10.4",
+    "typescript": "^3.7.5"
+  }
 }

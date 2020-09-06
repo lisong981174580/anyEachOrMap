@@ -1,0 +1,19 @@
+{
+  "presets": [
+    [
+      "@babel/preset-env",
+      {
+        "targets": {
+          "browsers": "> 5%"
+        },
+        "useBuiltIns": "usage",
+        "corejs": "2"
+      }
+    ],
+    "@babel/preset-typescript"
+  ],
+  "plugins": [
+    "@babel/plugin-proposal-object-rest-spread",
+    ["@babel/plugin-proposal-class-properties", { "loose": true }]
+  ]
+}
